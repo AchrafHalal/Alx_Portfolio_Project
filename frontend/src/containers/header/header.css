@@ -1,0 +1,144 @@
+.ashl__header{
+    display: flex;
+}
+
+.ashl__header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.ashl__header-content h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.ashl__header-content p{
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+
+}
+
+.ashl__header-content__input{
+    display: flex;
+    width: 100%;
+    margin: 2rem 0 1rem;
+}
+
+.ashl__header-content__input input{
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 5px 0px 0px 5px;
+    border: 2px solid var(--gradient-text);
+    background: var(--gradient-text);
+    color: var(--font, #3D6184);
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 0 1rem;
+    outline: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.ashl__header-content__input button{
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    background: #FF4820;
+    color: #fff;
+    height: 73px;
+    border-radius: 5px 0px 0px 5px;
+    line-height: 27px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.ashl__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ashl__header-image img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .ashl__header{
+        flex-direction: column;
+    }
+
+    .ashl__header-container{
+        margin: 0 0 3rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .ashl__header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .ashl__header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .ashl__header-content__input input,
+    .ashl__header-content__input button{
+        font-size: 16px;
+        line-height: 24px;
+        height: 30px; /* Decrease height */
+        padding: 0.5rem; 
+    }
+
+}
+
+@media screen and (max-width: 490px){
+    .ashl__header h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .ashl__header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .ashl__header-content__input input,
+    .ashl__header-content__input button{
+        font-size: 12px;
+        line-height: 16px;
+        height: 25px; /* Decrease height */
+        padding: 0.5rem; /* Decrease padding */
+    }
+    
+}
