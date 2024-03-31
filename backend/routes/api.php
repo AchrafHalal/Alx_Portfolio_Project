@@ -22,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/services', [ServiceController::class, 'index']);
 Route::post('/bookings', 'BookingController@store')->name('bookings.store');
+Route::post('/get-started', 'App\Http\Controllers\EmailController@sendEmail')->name('get-started');
