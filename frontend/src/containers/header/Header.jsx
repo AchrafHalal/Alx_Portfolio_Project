@@ -1,8 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
+import axios from 'axios'
 import shelter from '../../assets/shelter.png'
 import './header.css'
 
 function Header() {
+  const [email, setEmail] = useState('');
+
+  const handleFormSubmit = async () => {
+      try {
+          await axios.post('/get-started', { email });
+          alert('Email sent successfully!');
+      } catch (error) {
+          console.error('Error sending email:', error);
+          alert('Failed to send email. Please try again later.');
+      }
+  };
+
   return (
     <div className='ashl__header section__padding' id='home'>
       <div className='ashl__header-content'>
@@ -14,8 +27,8 @@ function Header() {
          Welcome to a place where every animal's journey begins a new.
         </p>
         <div className='ashl__header-content__input'>
-          <input type='email' placeholder='Your Email Address' />
-          <button type='button'>Get Started</button>
+            <input type='email' placeholder='Your Email Address' value={email} onChange={(e) => setEmail(e.target.value)} />
+            <button type='button' onClick={handleFormSubmit}>Get Started</button>
         </div>
       </div>
       <div className='ashl__header-image'>
