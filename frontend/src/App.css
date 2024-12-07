@@ -12,11 +12,11 @@ a {
     text-decoration: none;
 }
 .gradient__bg{
-        background: -moz-radial-gradient(circle at 3% 25%, rgba(176, 255, 208, 1) 0%, rgba(255, 255, 255, 1) 94%);
-        background: -webkit-radial-gradient(circle at 3% 25%, rgba(176, 255, 208, 1) 0%, rgba(255, 255, 255, 1) 94%);
-        background: -o-radial-gradient(circle at 3% 25%, rgba(176, 255, 208, 1) 0%, rgba(255, 255, 255, 1) 94%);
-        background: -ms-radial-gradient(circle at 3% 25%, rgba(176, 255, 208, 1) 0%, rgba(255, 255, 255, 1) 94%);
-        background: radial-gradient(circle at 3% 25%, rgba(176, 255, 208, 1) 0%, rgba(255, 255, 255, 1) 94%);
+       
+        background-image: url(/src/assets/home.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
 }
 .gradient__text{
     background: var(--gradient-text);

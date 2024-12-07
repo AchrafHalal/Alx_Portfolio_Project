@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: gray;
+}
+
+.containerr{
+    position: fixed; /* Centré par rapport à la fenêtre */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    border-radius: 7px;
+    z-index: 2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.containerr img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#log{
+    font-family: sans-serif, Helvetica, sans-serif;
+    font-size: 31px;
+    font-weight: 700;
+    margin: 18px;
+    margin-left: 159px;
+    color: green;
+}
+
+.nom-pass{
+    /* background-color: bisque; */
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+
+}
+
+.nom-pass input{
+    margin: 15px;
+    margin-left: 0px;
+    padding: 5px;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(179, 228, 198);
+    color: black;
+}
+
+.nom-pass p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+
+#submit-btn{
+    font-size: 20px;
+    margin-left: 156px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(45 126 119);
+    padding: 5px 20px;
+    color: rgb(255, 255, 255);
+}
+
+#img2{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+#submit-btn:hover{
+    background-color: rgb(54, 163, 154);
+    cursor: pointer;
+}

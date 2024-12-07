@@ -5,16 +5,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  
 }
 
-.about-us {
+.about_us {
   padding: 90px 0;
-  background: #ddd;
+  background-color: whitesmoke;
 }
 
 .about {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -30,12 +30,14 @@
 
 .text {
   margin-top: 40px;
+  width: 600px;
 }
 
 .text h2 {
   font-weight: 800;
   font-size: 36px;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .text h5 {
@@ -66,38 +68,3 @@
   color: #fff;
 }
 
-@media screen and (max-width: 2000px) {
-  .about-us {
-    padding: 70px 0;
-  }
-}
-
-@media screen and (max-width: 1150px) {
-  .pic {
-    max-width: 250px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .text h2 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .pic {
-    max-width: 200px;
-  }
-
-  .text h2 {
-    font-size: 28px;
-  }
-
-  .text h5 {
-    font-size: 18px;
-  }
-
-  .text p {
-    font-size: 14px;
-  }
-}

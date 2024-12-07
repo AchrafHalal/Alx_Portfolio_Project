@@ -1,12 +1,11 @@
 import React from 'react'
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs'
-import img1 from '../../assets/img1.jpg'
-import img2 from '../../assets/img2.jpg'
-import img3 from '../../assets/img3.jpg'
-import img4 from '../../assets/img4.jpg'
+import img1 from '../../assets/agr1.jpg'
+import img2 from '../../assets/agr2.jpg'
+import img3 from '../../assets/agr3.jpg'
 import './available.css'
 
-const images =[img1, img2, img3, img4]
+const images =[img1, img2, img3]
 
 const Available = ()=> {
     const scrollRef = React.useRef(null);
@@ -26,11 +25,9 @@ const Available = ()=> {
   return (
     <div className='ashl__available flex__center' id='adopt'>
         <div className='ashl__available-content'>
-            <h1 className='gradient__text' >Find Your Furry Friend: Adopt Today!</h1>
+            <h1 className='gradient__text' >Grow Together: Cultivate a Greener Future!</h1>
             <p style={{color:'#AAA', marginTop:'2rem'}}>
-            Discover our selection of loving companions waiting to find their forever homes. From playful pups to affectionate felines,
-             our adoptable pets are ready to bring joy to your life.
-             Find your perfect match and make a difference today
+            Discover the beauty of sustainable farming with our innovative agricultural solutions. From nutrient-rich soil enhancers to climate-smart practices, our tools and techniques are designed to help you cultivate success. Start growing your future today—one harvest at a time!
             </p>
           <button type='button' className='btn'>Available</button>
         </div>

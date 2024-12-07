@@ -9,7 +9,7 @@ const Menu =()=>{
   return(
     <>
     <p><a href='#home'>Home</a></p>
-    <p><a href='#adopt'>Adopt</a></p>
+    <p><a href='#adopt'>Available</a></p>
     <p><a href='#services'>Services</a></p>
     <p><a href='#book'>Book</a></p>
     <p><a href='#about us'>About us</a></p>
